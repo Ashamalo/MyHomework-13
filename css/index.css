@@ -1,0 +1,45 @@
+.container {
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+
+    .shape {
+        stroke-width: 5px;
+    }
+
+    .square {
+        fill: #ffcccb;
+        stroke: #ff0000;
+    }
+
+    .rectangle {
+        fill: #ccffcc;
+        stroke: #008000;
+    }
+
+    .circle {
+        animation: colorChange 2s infinite alternate;
+        fill: #ccccff;
+        stroke: #0000ff;
+    }
+
+    .ellipse {
+        stroke: #87CEFA;
+        fill: url(#gradient);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        fill: #ccccff;
+        stroke: #0000ff;
+    }
+
+    100% {
+        fill: #ffcccb;
+        stroke: #ff0000;
+    }
+}
